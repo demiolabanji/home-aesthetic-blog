@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Home</title>
+    <style>
+      body {
+        background: rgb(240, 207, 215);
+        text-align: center;
+      }
+      h1 {
+        margin: auto;
+        color: rgb(150, 40, 63);
+        text-align: center;
+      }
+      h2 {
+        margin: auto;
+        border: 1px solid rgb(150, 40, 63);
+        padding: 5px;
+        font-size: 20px;
+        border-radius: 10px;
+        text-align: center;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 400px;
+        border-radius: 0px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 17px;
+        margin: 10 10 15px;
+      }
+      .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 40px 80px;
+      }
+      .See-More {
+        padding-top: 10px;
+        text-decoration: none;
+        font-size: 12px;
+        margin: 0 auto;
+      }
+      .See-More:hover {
+        text-decoration: underline;
+      }
+      .See-More {
+        display: block;
+        margin: auto;
+        background: rgb(197, 93, 115);
+        color: white;
+        font: bold;
+        padding: 10px 10px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        transition: all 1s ease-in-out;
+      }
+      button:hover {
+        opacity: 1;
+        cursor: pointer;
+        background-color: rgb(105, 21, 39);
+      }
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Container">
+      <h1>Home Aesthetics Blog</h1>
+      <br />
+      <br />
+      <img
+        src="https://i.pinimg.com/originals/86/fa/8a/86fa8aa9c8b044d846d5c92d109ecb1f.jpg"
+        alt="Living Area"
+        width="500px"
+      />
+      <br />
+
+      <h2>Cute and Cozy Living Area</h2>
+      <p>
+        There is always something complete about a cozy living area. It
+        generates the feeling of peace and harmony, in that exact moment of
+        completing your day of stress, worry, fun, laughter and so on.
+        <br />A cozy room helps you end your day of chaos in a perfect peace
+        <br />
+      </p>
+      <a
+        href="https://www.pinterest.co.uk/search/pins/?q=cozy%20living%20room&rs=typed&term_meta[]=cozy%7Ctyped&term_meta[]=living%7Ctyped&term_meta[]=room%7Ctyped"
+        class="See-More"
+      >
+        See more on Pinterest
+      </a>
+      <br />
+      <br />
+      <a href="https://www.rightmove.co.uk/">Rightmove</a>
+
+      <p class="footer">
+        <br />
+        <br />
+        Created by
+        <a href="https://www.instagram.com/qaarts/"> Queen Abolarinwa </a>
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let country = prompt("What country are you looking to move to?");
+
+        alert(
+          "Thank you " +
+            name +
+            ". We hope you find your dream home in " +
+            country +
+            "!"
+        );
+      }
+      let buyHouse = document.querySelector(".buy-house");
+      buyHouse.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
